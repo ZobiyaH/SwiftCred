@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Signup - SwiftCred</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/js/all.min.js"></script>
+</head>
+<body>
+    <header>
+        <div class="logo">⚡ SwiftCred</div>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Products</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+            <button class="get-started">Get Started</button>
+        </nav>
+    </header>
+
+    <div class="container">
+        <h1>SIGNUP PAGE</h1>
+        <div class="signup-box">
+            <input type="text" placeholder="Full name">
+            <input type="email" placeholder="Email">
+            <div class="password-field">
+                <input type="password" placeholder="Password" id="password">
+                <i class="fa-solid fa-eye toggle-password" onclick="togglePassword('password')"></i>
+            </div>
+            <div class="password-field">
+                <input type="password" placeholder="Confirm Password" id="confirm-password">
+                <i class="fa-solid fa-eye toggle-password" onclick="togglePassword('confirm-password')"></i>
+            </div>
+            <button class="signup-btn">Sign up</button>
+            <p class="or">Or</p>
+            <button class="google-login">
+                <i class="fa-brands fa-google"></i> Login with Google
+            </button>
+            <p class="login-link">Already have an account? <a href="#">Login</a></p>
+        </div>
+    </div>
+
+    <script>
+        function togglePassword(id) {
+            var input = document.getElementById(id);
+            input.type = input.type === "password" ? "text" : "password";
+        }
+    </script>
+</body>
+</html>
